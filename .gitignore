@@ -38,3 +38,6 @@ jspm_packages
 
 # Intellij directory
 .idea
+
+# Distribution directtory
+dist

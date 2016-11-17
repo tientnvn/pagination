@@ -1,10 +1,12 @@
 {
-  "name": "pagination",
-  "version": "1.0.0",
+  "name": "pagination-js",
+  "version": "1.0.4",
   "description": "Pagination for nodejs",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "babel lib --presets babel-preset-es2015 --out-dir dist",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,15 @@
   ],
   "author": "Tien Nguyen",
   "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.18.0"
+  },
   "bugs": {
     "url": "https://github.com/tientnvn/pagination/issues"
   },
