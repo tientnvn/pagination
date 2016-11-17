@@ -1,0 +1,23 @@
+{
+  "name": "pagination",
+  "version": "1.0.0",
+  "description": "Pagination for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tientnvn/pagination.git"
+  },
+  "keywords": [
+    "pagination",
+    "nodejs"
+  ],
+  "author": "Tien Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tientnvn/pagination/issues"
+  },
+  "homepage": "https://github.com/tientnvn/pagination#readme"
+}
