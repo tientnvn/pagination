@@ -10,10 +10,7 @@ npm install --save pagination-js
 
 ```javascript
 route.get('/test', (req, res) => {
-    let total = 15;
-    var url_parts = url.parse(req.url, true);
-    var query = url_parts.query;
-    let pagination = (new Pagination(query, total)).getPagination();
+    let pagination = (new Pagination(req.query, total)).getPagination();
     res.json(pagination);
 });
 ```
@@ -23,17 +20,17 @@ route.get('/test', (req, res) => {
 - Use postman:
 
 ```
-http://localhost:3333/media/test?item_per_page=16&page=2
+http://localhost:3333/media/test?itemPerPage=16&page=2
 ```
 
 - The result:
 
 ```json
 {
-  "total_item": 15,
+  "totalItem": 15,
   "page": 2,
-  "item_per_page": 16,
-  "min_index": 16,
-  "max_index": 32
+  "itemPerPage": 16,
+  "minIndex": 16,
+  "maxIndex": 32
 }
 ```
